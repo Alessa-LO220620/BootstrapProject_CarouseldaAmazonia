@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--Indice dos Requisitos propostos
+1) Scroll 400px
+html linha 233 / js linha 2 a 11
+
+2) Validações Java Script nas linhas 13 a 91 
+do arquivo cadastro.js
+
+3)Estlizado os rodapés com CSS em todos os arquivos .css
+
+4) Article html linha 110 e 111
+   Aside nossa_historia.html linha 135 a 151
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="libs/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CDN jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Carousel da Amazônia</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Inicio do container principal-->
+        <!--Inicio do Header-->
+        <header class="row">
+            <section class="col-md-12 col-sm-6 ml-auto" style="background-color:#D99962;">
+                <a href="cadastro.html" style="color: rgb(65, 62, 62);">Seja bem vindo, faça login ou cadastre-se</a>
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 text-center">
+                        <a href="index.html"><img id="img_logo" src="imagens/logo ale.png" width="300px"></a>
+                    </div>
+                </div>
+            </section>
+            <!--Incio do NavBar-->
+            <section class="col-12 px-0">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#3B4014">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                        aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html" style="color: honeydew;">Home <span
+                                        class="sr-only">(página
+                                        atual)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nossa_historia.html" style="color: honeydew;">Nossa
+                                    História</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="produtos.html" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="color: honeydew;">
+                                    Produtos
+                                </a>
+                                <div class="dropdown-menu" style="background-color:#3B4014"
+                                    aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="produtos.html">Açaí</a>
+                                    <a class="dropdown-item" href="produtos.html">Buriti</a>
+                                    <a class="dropdown-item" href="produtos.html">Castanha do Brasil</a>
+                                    <a class="dropdown-item" href="produtos.html">Cupuaçu</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item"
+                                        href="https://www.scielo.br/j/aa/a/nVZR7Xy4c5Rc94WgP5YTx3J/?lang=pt">Informações
+                                        Nutricionais</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html" style="color: honeydew;">Cadastro</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar"
+                                aria-label="Pesquisar">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></button>
+                        </form>
+                    </div>
+                </nav>
+            </section>
+            <!--fim NavBar-->
+            <!--inicio da imagem gif-->
+            <section class="col-md-12 px-0">
+                <img id="home_gif" class="img-fluid" src="imagens/index.gif" alt="amazonia_video">
+            </section>
+        </header>
+        <!--iNICIO DO CORPO DA PÁGINA-->
+        <main>
+            <section class="container-fluid mt-3 px-0">
+                <!--inicio das 3 imagens principais-->
+                <div id="article_index" class="row">
+                    <div class="col-md-12 mb-3">
+                        <article class="display-4 text-center">
+                            A Carousel da Amazônia traz para você os melhores frutos da região.
+                            Confira abaixo nossos destaques
+                        </article>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div id="div_acai" class="col-12 col-md-4 my-2 rounded" class="position-relative">
+                        <img class="w-100 rounded" src="imagens/acai2.jpg" alt="açai">
+                        <div>
+                            <h4 class="text-center mt-1">Gostou? Esse é o nosso Açai</h4>
+                            <a href="produtos.html">
+                                <button class="btn btn-outline-secondary btn-sm float-right">
+                                    Saiba mais
+                                </button></a>
+                        </div>
+                    </div>
+                    <div id="div_cupuacu" class="col-12 col-md-4 my-2 rounded">
+                        <img class="w-100 rounded" src="imagens/cupuacu.jpg" alt="cupuaçu">
+                        <div>
+                            <h4 class="text-center mt-1">Curtiu? Conheça o Cupuaçu</h4>
+                            <a href="produtos.html"><button class="btn btn-outline-secondary btn-sm float-right">Saiba
+                                    mais</button></a>
+                        </div>
+                    </div>
+
+                    <div id="div_castanha" class="col-12 col-md-4 my-2 rounded">
+                        <img class="w-100 rounded" src="imagens/castanha_do_para.jpg" alt="castanha_do_para">
+                        <h4 class="text-center mt-1">Amou? Essa é a Castanha do Brasil</h4>
+                        <a href="produtos.html"><button class="btn btn-outline-secondary btn-sm float-right">Saiba
+                                mais</button></a>
+                    </div>
+                </div>
+    </div>
+    </div>
+    </section>
+    <section class="container-fluid mt-2">
+        <!--banner com informações-->
+        <div class="row mt-4">
+            <div class="col-md-12 col-sm-6">
+                <h1 class="display-4 text-center">Notícias e Mídias</h1>
+            </div>
+    </section>
+    <!--INICIO DO CAROUSEL-->
+    <div class="container mt-3 mb-5" id="mycontainer">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel"
+            data-interval="2000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a
+                        href="https://g1.globo.com/economia/agronegocios/agro-a-industria-riqueza-do-brasil/noticia/2021/07/30/gente-do-campo-projeto-estimula-o-cultivo-sustentavel-do-acai-nas-comunidades-ribeirinhas-do-marajo.ghtml">
+                        <img class="d-block w-100 img-responsive" src="imagens/noticia1.png" alt="Primeiro Slide">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cultivo Sustentável do Açaí</h5>
+                        <p>A Carousel da Amazônia se envolveu com o projeto de cultivo sustentável do Açaí nas
+                            comunidades ribeirinhas do Marajó</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a
+                        href="https://www.sebrae.com.br/sites/PortalSebrae/sbrt/acai,ac0b29b605341710VgnVCM1000004c00210aRCRD"><img
+                            class="d-block w-100 img-responsive" src="imagens/noticia2.png" alt="Segundo Slide"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Sebrae e o Açaí</h5>
+                        <p>Sebrae incetiva os pequenos produtores do fruto a se modernizarem</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a
+                        href="https://portalamazonia.com/noticias/empresa-inicia-processo-de-exportacao-de-polpa-de-frutas-para-os-estados-unidos-e-portugal"><img
+                            class="d-block w-100 img-responsive" src="imagens/noticia3.jpg" salt="Terceiro Slide"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Exportação de Cupuaçu</h5>
+                        <p>Países da Europa se rendem aos frutos Amazônicos. Confira as principais frutas Brasileiras
+                            que estão caindo no gosto dos Portugueses</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a
+                        href="https://www.noticiasagricolas.com.br/noticias/hortifruti/290309-safra-de-acai-comeca-com-boa-perspectiva-segundo-boletim-da-sociobiodiversidade.html#.YSppP45Ki00"><img
+                            class="d-block w-100 img-responsive" src="imagens/noticia4.png" alt="Terceiro Slide"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Carousel da Amazônia é destaque</h5>
+                        <p>Uma das empresas que mais crescem suas exportações no âmbito dos produtos <italico>In Natura
+                            </italico>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.tuasaude.com/castanha-do-para/"><img class="d-block w-100"
+                            src="imagens/noticia5.png" alt="Terceiro Slide"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Castanha do Pará</h5>
+                        <p>8 benefícios da castanha do Pará (e como consumir)</p>
+                    </div>
+                </div>
+                <div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside>
+        <!--Início LIBRAS-->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+        </div>
+    </aside>
+    <!--fim LIBRAS-->
+    </main>
+
+    <!-- Botao Voltar ao Topo -->
+    <a href="#img_logo" id="voltar"><img src="imagens/scroll_top.png"></a>
+    <!-- Botao Voltar ao Topo -->
+
+    <!--INICIO DO FOOTER FEITO COM CSS-->
+    <footer class="linha4">
+        <div class="rodape_um">
+            <a href="index.html"><img src="imagens/logo ale.png"></a>
+        </div>
+        <div class="rodape_dois">
+            <div class="topfooter">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nossa_historia.html">Nossa História</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="cadastro.html">Contato</a></li>
+            </div>
+        </div>
+        <div class="rodape_tres">
+            <h3>Segue a gente!</h3>
+            <ul class="socialmedia">
+                <li><a href="https://web.facebook.com/SoulCodeAcademy?_rdc=1&_rdr" target="_blank"><img
+                            src="imagens/ico-facebook.jpg" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img
+                            src="imagens/ico-instagram.jpg" alt="Instagram"></a></li>
+                <li><a href="https://www.linkedin.com/company/soulcodeacademy/mycompany/" target="_blank"><img
+                            src="imagens/ico-linkedin.jpg" alt="Linkedin"></a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

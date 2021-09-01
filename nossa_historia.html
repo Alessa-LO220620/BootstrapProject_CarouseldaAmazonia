@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="libs/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!-- CDN CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- CDN jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+    <link rel="stylesheet" href="css/nossa_historia.css">
+    <title>Carousel da Amazônia</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Inicio do container principal-->
+        <!--Inicio do Header-->
+        <header class="row">
+            <section class="col-md-12 col-sm-6 ml-auto" style="background-color:#D99962;">
+                <a href="cadastro.html" style="color: rgb(65, 62, 62);">Seja bem vindo, faça login ou cadastre-se</a>
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 text-center">
+                        <a href="index.html"><img id="img_logo" src="imagens/logo ale.png" width="300px"></a>
+                    </div>
+                </div>
+            </section>
+            <!--Incio do NavBar-->
+            <section class="col-12 px-0">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#3B4014">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                        aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html" style="color: honeydew;">Home <span
+                                        class="sr-only">(página
+                                        atual)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nossa_historia.html" style="color: honeydew;">Nossa
+                                    História</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="produtos.html" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="color: honeydew;">
+                                    Produtos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                    style="background-color:#3B4014">
+                                    <a class="dropdown-item" style="color:honeydew" href="produtos.html">Açaí</a>
+                                    <a class="dropdown-item" style="color:honeydew" href="produtos.html">Buriti</a>
+                                    <a class="dropdown-item" style="color:honeydew" href="produtos.html">Castanha do
+                                        Pará</a>
+                                    <a class="dropdown-item" style="color:honeydew" href="produtos.html">Cupuaçu</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" style="color:honeydew"
+                                        href="https://www.scielo.br/j/aa/a/nVZR7Xy4c5Rc94WgP5YTx3J/?lang=pt">Informações
+                                        Nutricionais</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html" style="color: honeydew;">Contato</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar"
+                                aria-label="Pesquisar">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></button>
+                        </form>
+                    </div>
+                </nav>
+                <!--fim NavBar-->
+            </section>
+            <!--imagem do cabeçalho-->
+            <section class="col-md-12 px-0" id="img_quem_somos">
+                <div id="quem_somos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <h1 class="display-5">Quem Somos</h1>
+                                <p>
+                                    Desde 2014, da Amazônia para a cidade! Tudo como resultado do nosso compromisso com
+                                    a excelência em níveis de pureza e concentração da fruta, certificações de qualidade
+                                    garantidas e, é claro, sempre preservando o compromisso com a sustentabilidade e o
+                                    reconhecimento humano.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!--inicio do corpo-->
+        <main class="container-fluid px-0 mb-4">
+            <section class="row">
+                <div class="col-md-10 mt-4" id="corpo_nossa_historia">
+                    <h2>Nossa História</h2>
+                    <p class="p_nossa_historia">
+                        A ideia de abrir uma empresa de produtos <i>In Natura</i> nasceu por inspiração de um amigo
+                        junto à notória ausência de
+                        produtos desse gênero na cidade e no comércio local. Foi sob esses aspectos que a primeira loja
+                        foi inaugurada no ano de 2014 em Manaus, no estado do Amazonas.
+                    </p>
+                    <p class="p_nossa_historia">
+                        No início a produção era simples, comprávamos em pouca quantidade diretamente do produtor local.
+                        Mas, em pouco
+                        tempo esse espaço se tornou pequeno para tamanha demanda e foi necessário expandir mais, um ano
+                        depois foi inaugurada uma segunda loja na cidade e daí pra frente nossos clientes só aumentaram
+                        e a paixão por trabalhar com produtos <i>In Natura</i> também.
+                    </p>
+                    <p class="p_nossa_historia">
+                        Em 2017 com a instalação de nossa fábrica, começamos a distribuição para o mercado interno e
+                        externo, pois além de termos outras lojas Carousel da Amazônia espalhadas pelo estado do
+                        Amazonas, também
+                        distribuímos e exportamos nossos produtos para demais estabelecimentos e países interessados.
+                    </p>
+                    <p class="p_nossa_historia">
+                        O Carousel da Amazônia hoje exporta para mais de três continentes, dentre eles América do norte,
+                        Europa e
+                        Ásia, tudo isso sob o lema de servir qualidade sempre. Nossa matéria prima é original da região
+                        Norte, o que garante a qualidade dos nossos produtos. E enviamos tudo, daqui para o mundo!
+                    </p>
+                </div>
+                <aside class="col-md-2 text-center mt-2 rounded" id="aside">
+                    <div>
+                        <img src="imagens/loja.png" alt="lojas">
+                        <h4>2014</h4>
+                        <p>Abertura da primeira loja em Manaus</p>
+                    </div>
+                    <div>
+                        <img src="imagens/segunda_loja.png" alt="lojas">
+                        <h4>2015</h4>
+                        <p>Abertura da nossa segunda loja</p>
+                    </div>
+                    <div>
+                        <img src="imagens/fabrica-verde.png" alt="lojas">
+                        <h4>2017</h4>
+                        <p>Instalação da nossa Fábrica Carousel da Amazônia</p>
+                    </div>
+                </aside>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="card col-md-5" id="efeito">
+                        <img class="card-img-top" id="img_card" src="imagens/empresa.jpeg" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <h3>Nossa Estrutura</h3><br>
+                            A empresa possui capacidade de processar 20 Toneladas de frutos por dia, que resultam em
+                            12 tonaladas de polpa.</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-5" id="efeito">
+                        <img class="card-img-top" id="img_card" src="imagens/empresa2.png" alt="Card image">
+                        <div class="card-body">
+                            <p class="card-text">
+                            <h3>A Sede</h3><br>Está localizada estrategicamente para que possa escoar sua produção para
+                            os principais centros de distribuição da região Norte</p>
+                        </div>
+                    </div>
+                    <aside class="col-md-2 text-center rounded" id="aside">
+                        <div>
+                            <img src="imagens/ciclo.png" alt="lojas">
+                            <h4>2020</h4>
+                            <p>Extensão de Nossa Fábrica Carousel da Amazônia para melhor atender nossos clientes e
+                                consumidores
+                            </p>
+                        </div>
+                        <div>
+                            <img src="imagens/aviao.png" alt="lojas">
+                            <h4>2018</h4>
+                            <p>Nossa primeira exportação de muitas</p>
+                        </div>
+                    </aside>
+            </section>
+            </section>
+            </section>
+        </main>
+
+        <!--Início LIBRAS-->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+        </div>
+        <!--fim LIBRAS-->
+
+        <!-- Botao Voltar ao Topo -->
+        <a href="#img_logo" id="voltar"><img src="imagens/scroll_top.png"></a>
+        <!-- Botao Voltar ao Topo -->
+    </div>
+
+    <!--INICIO DO FOOTER FEITO COM CSS-->
+    <footer class="linha4">
+        <div class="rodape_um">
+            <a href="index.html"><img src="imagens/logo ale.png"></a>
+        </div>
+        <div class="rodape_dois">
+            <div class="topfooter">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nossa_historia.html">Nossa História</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="cadastro.html">Contato</a></li>
+            </div>
+        </div>
+        <div class="rodape_tres">
+            <h4>Segue a gente!</h4>
+            <ul class="socialmedia">
+                <li><a href="https://web.facebook.com/SoulCodeAcademy?_rdc=1&_rdr" target="_blank"><img
+                            src="imagens/ico-facebook.jpg" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img
+                            src="imagens/ico-instagram.jpg" alt="Instagram"></a></li>
+                <li><a href="https://www.linkedin.com/company/soulcodeacademy/mycompany/" target="_blank"><img
+                            src="imagens/ico-linkedin.jpg" alt="Linkedin"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/nossa_historia.js"></script>
+    <!-- CDN CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- CDN jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+    <!-- CDN JS Bootstrap -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+#aside{
+    background-color: #f2a025ce;
+    
+}
+#aside img{
+    width: 50px;
+    height: 50px;
+}
+#img_card{
+    width: 530px;
+    height: 350px;
+    border-radius: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#efeito{
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 0 60px -10px rgba(0,0,0,0.25);
+}
+#efeito img{
+     max-width: 100%;
+     -moz-transition: all 0.3s;
+     -webkit-transition: all 0.3s;
+     transition: all 0.3s;
+}
+#efeito:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#quem_somos{
+    background-color: #4001017e;
+    color: blanchedalmond;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align:justify;
+    height: 300px;
+    padding: 10px;
+}
+#img_quem_somos{
+    background-image: url("../imagens/cabecalho_nossahistoria.jpg");
+    background-size: cover; 
+    background-position:center; 
+    background-repeat:no-repeat;
+    height: 300px;
+}
+
+#corpo_nossa_historia{
+    text-align: justify;
+    line-height: 180%;
+}
+.p_nossa_historia{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+h2{
+    margin-left: 40px;
+}
+#voltar {
+    position: fixed;
+    bottom: 200px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    color: #D99962;
+}
+
+#voltar:hover{
+    background: #278C4B;
+    color: #85BFF2;
+    border-radius: 16px;
+}
+
+#voltar img{
+    width: 50px;
+    height: 50px;
+}
+
+.linha4 {
+    display: grid;
+    grid-template-columns: 20fr 45fr 25fr;
+    grid-template-rows:auto;
+    width: 100%;
+    background-color: #D99962;
+}
+
+footer img {
+    width: 100%;
+}
+
+ul.socialmedia {
+    margin-top: 30px;
+}
+
+ul.socialmedia li {
+    display: inline;
+}
+
+ul.socialmedia img {
+    width: 10%;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.topfooter,
+.rodape_tres h2 {
+    font-weight: normal;
+}
+
+.topfooter li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.topfooter li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #272727;
+}
+
+.rodape_um {
+    padding: 20px;
+
+}
+
+.rodape_dois {
+    padding: 20px;
+}
+
+.rodape_tres {
+    padding: 20px;
+}

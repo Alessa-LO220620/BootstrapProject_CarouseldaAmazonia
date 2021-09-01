@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="libs/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CDN jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+    <link rel="stylesheet" href="css/produtos.css">
+    <title>Carousel da Amazônia</title>
+</head>
+
+<body id="principal">
+    <!-- Inicio do container principal-->
+    <div class="container-fluid">
+        <!--Inicio do Header-->
+        <header class="row">
+            <section class="col-md-12 col-sm-6 ml-auto" style="background-color:#D99962;">
+                <a href="cadastro.html" style="color: rgb(65, 62, 62);">Seja bem vindo, faça login ou cadastre-se</a>
+                <div class="row">
+                    <div class="col-md-12 col-sm-6 text-center">
+                        <a href="index.html"><img id="img_logo" src="imagens/logo ale.png" width="300px"></a>
+                    </div>
+                </div>
+            </section>
+            <!--Incio do NavBar-->
+            <section class="col-12 px-0">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#3B4014">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                        aria-expanded="false" aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html" style="color: honeydew;">Home <span
+                                        class="sr-only">(página
+                                        atual)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nossa_historia.html" style="color: honeydew;">Nossa
+                                    História</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="produtos.html" id="navbarDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    style="color: honeydew;">
+                                    Produtos
+                                </a>
+                                <div class="dropdown-menu" style="background-color:#3B4014"
+                                    aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="produtos.html">Açaí</a>
+                                    <a class="dropdown-item" href="produtos.html">Buriti</a>
+                                    <a class="dropdown-item" href="produtos.html">Castanha do Pará</a>
+                                    <a class="dropdown-item" href="produtos.html">Cupuaçu</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item"
+                                        href="https://www.scielo.br/j/aa/a/nVZR7Xy4c5Rc94WgP5YTx3J/?lang=pt">Informações
+                                        Nutricionais</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html" style="color: honeydew;">Cadastro</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Buscar"
+                                aria-label="Pesquisar">
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></button>
+                        </form>
+                    </div>
+                </nav>
+                <!--fim NavBar-->
+            </section>
+            <!--imagem do cabeçalho-->
+            <section class="col-md-12 px-0" id="img_quem_somos">
+                <div id="quem_somos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <h1 class="display-5">Nossos Produtos</h1>
+                                <p>
+                                    Oferecemos ao mercado frutos de alto valor nutricional vindos da região Amazônica.
+                                    Trabalhamos com produtos <i>In Natura</i> selecionados e vendidos a empresas no
+                                    geral,
+                                    bem como a consumidores domesticos. Prezamos sempre pela qualidade e seleção dos
+                                    melhores frutos para você
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!--Inicio do Acordeon-->
+        <main id="main" class="container mt-5 mb-5">
+            <div class="accordion" id="acordeon">
+                <div class="card">
+                    <!--produto açaí-->
+                    <div class="card-header" style="background-color:#f29f05c5" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Açaí
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#acordeon">
+                        <div class="row card-body">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="imagens/acai.jpg" alt="açai">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="paragrafo">
+                                    Nosso carro-chefe, esse fruto que é a cara do Brasil, pode ser servido de diversas
+                                    formas, sempre mantendo seus inúmeros benefícios e sabor sem igual.
+                                </p>
+                                <p class="paragrafo">
+                                    O fruto ganhou o mundo. É vedete nas lanchonetes de cidades litorâneas do Brasil, em
+                                    quiosques de Los Angeles e Nova Iorque (EUA) e até em Paris (França). Açaí, típico
+                                    da região Amazônica, fruto do açaizeiro (Euterpe oleracea, família Palmae) é muito
+                                    utilizado pelos habitantes no preparo de sucos, vinhos, doces, licores e sorvetes. O
+                                    açaizeiro é uma palmeira tipicamente tropical, encontrada no estado silvestre e faz
+                                    parte da vegetação das matas de terra firme, várzea e igapó.
+                                </p>
+                                <p class="paragrafo">
+                                    A palmeira também é explorada na região para a extração do palmito. Conhecido por
+                                    ter uma polpa com grande poder nutritivo, a fruta é consumida no mundo todo em
+                                    bebidas, mix de frutas, sorvetes e cápsulas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fim produto açai-->
+                <div class="card">
+                    <!--produto buriti-->
+                    <div class="card-header" id="headingTwo" style="background-color:#f29f05c5">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Buriti
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#acordeon">
+                        <div class="row card-body">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="imagens/buriti.jpg" alt="buriti">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="paragrafo">
+                                    Fruto ovalado de 4-7 cm de comprimento, por 3-6 cm de diâmetro, recobertos por
+                                    escamas de cor vinho-avermelhada. A polpa é amarelo-alaranjada e apresenta aspecto
+                                    oleoso. Uma única planta pode conter até sete cachos de frutos, com média anual de
+                                    produção de 5.000 frutos. Cada fruto contém entre uma e duas sementes.
+                                </p>
+                                <p class="paragrafo">
+                                    A semente é grande, oval, muito dura e envolta por uma cobertura esponjosa. Contém
+                                    uma amêndoa comestível no seu interior.
+                                </p>
+                                <p class="paragrafo">
+                                    A floração dura quase o ano inteiro, porém floresce com maior intensidade nos meses
+                                    de dezembro a abril. A maturação dos frutos verifica-se principalmente nos meses de
+                                    dezembro a julho.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fim produto buriti-->
+                <div class="card">
+                    <!--produto castanha do Brasil-->
+                    <div class="card-header" id="headingThree" style="background-color:#f29f05c5">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Castanha do Brasil
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#acordeon">
+                        <div class="row card-body">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="imagens/castanha_do_para_2.jpg" alt="castanha do brasil">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="paragrafo">
+                                    Conhecida como Rainha da Floresta Amazônica, a majestosa castanheira produz a
+                                    castanha-do-brasil, uma semente muito saborosa de alto valor nutritivo e por isso
+                                    muito valorizada no mercado nacional e internacional. Ocorre praticamente em toda
+                                    Amazônia nas áreas de florestas de terra firme e tem relação direta com a
+                                    conservação ambiental.
+                                </p>
+                                <p class="paragrafo">
+                                    Ela também é conhecida pelos nomes: castanha-do-pará, castanha-da-amazônia,
+                                    castanha, castanheira, castanha-verdadeira, castanheiro, amendoeira-da-América,
+                                    castanha-mansa e muitos outros.
+                                </p>
+                                <p class="paragrafo">
+                                    Pertencente a familia Lecythidaceae, a castanheira-do-brasil(Bertholletia excelsa) e
+                                    uma das mais importantes especies de exploracao extrativa da Amazonia. Tem
+                                    participacao significativa na geracao de divisas para a regiao, com as exportacoes
+                                    de suas sementes para os mercados interno e externo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fim castanha do brasil-->
+                <div class="card">
+                    <!--produto cupuaçu-->
+                    <div class="card-header" id="headingFour" style="background-color:#f29f05c5">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                Cupuaçu
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#acordeon">
+                        <div class="row card-body">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="imagens/cupuacu2.jpg" alt="cupuaçu">
+                            </div>
+                            <div class="col-md-6">
+                                <p class="paragrafo">
+                                    Por acaso você já provou cupuaçu? Se a resposta for "não" é hora de reverter esse
+                                    quadro. A fruta nativa da Amazônia, e portanto originária também do Brasil, é uma
+                                    antiga conhecida dos índios da região, que não apenas a consomem por gostarem de seu
+                                    sabor, mas também pelas suas propriedades curativas.
+                                </p>
+                                <p class="paragrafo">
+                                    Hoje, ela chega a ser vendida em pó por um valor bem elevado em outros países, mas
+                                    aqui temos o privilégio de aproveitá-la na sua forma orgânica, e portanto com todos
+                                    os seus benefícios.
+                                </p>
+                                <p class="paragrafo">
+                                    Como toda boa fruta, o cupuaçu é rico em vitaminas e minerais, e por isso é
+                                    excelente não só para combater enfermidades como também problemas menores que afetam
+                                    muitas pessoas. Por fim, possui boas quantidades de selênio e cálcio, o que não
+                                    apenas auxilia o metabolismo como também deixa os ossos mais fortes, evitando
+                                    problemas como a osteoporose.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--fim cupuaçu-->
+
+                <aside>
+                    <!--Início LIBRAS-->
+                    <div vw class="enabled">
+                        <div vw-access-button class="active"></div>
+                        <div vw-plugin-wrapper>
+                            <div class="vw-plugin-top-wrapper"></div>
+                        </div>
+                        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                        <script>
+                            new window.VLibras.Widget('https://vlibras.gov.br/app');
+                        </script>
+                    </div>
+                </aside>
+                <!--fim LIBRAS-->
+        </main>
+
+        <!-- Botao Voltar ao Topo -->
+        <a href="#img_logo" id="voltar"><img src="imagens/scroll_top.png"></a>
+        <!-- Botao Voltar ao Topo -->
+    </div>
+    <!--INICIO DO FOOTER FEITO COM CSS-->
+    <footer class="linha4">
+        <div class="rodape_um">
+            <a href="index.html"><img src="imagens/logo ale.png"></a>
+        </div>
+        <div class="rodape_dois">
+            <div class="topfooter">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nossa_historia.html">Nossa História</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="cadastro.html">Contato</a></li>
+            </div>
+        </div>
+        <div class="rodape_tres">
+            <h3>Segue a gente!</h3>
+            <ul class="socialmedia">
+                <li><a href="https://web.facebook.com/SoulCodeAcademy?_rdc=1&_rdr" target="_blank"><img
+                            src="imagens/ico-facebook.jpg" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><img
+                            src="imagens/ico-instagram.jpg" alt="Instagram"></a></li>
+                <li><a href="https://www.linkedin.com/company/soulcodeacademy/mycompany/" target="_blank"><img
+                            src="imagens/ico-linkedin.jpg" alt="Linkedin"></a></li>
+            </ul>
+        </div>
+    </footer>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="js/produtos.js"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
